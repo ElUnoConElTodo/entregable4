@@ -18,7 +18,7 @@ const ModalForm = ({
   updatingUser,
   updateUser,
   setUpdatingUser,
-  defaultValues}) => {
+  }) => {
   
   const {register, handleSubmit, reset} = useForm()
   
@@ -32,23 +32,25 @@ const ModalForm = ({
   }
 
   const handleClickClose = () => {
-    handleClickShowModal()
-    reset(defaultValues)
-    setUpdatingUser()
+    reset(defaultValues);
+    handleClickShowModal();
+    setUpdatingUser();
   }
 
   useEffect(() => {
     if(updatingUser){
       reset(updatingUser);
     };
-  }, [updatingUser])
+  }, [updatingUser]);
   
   
   return (
     <section className={`modalForm ${isShowModal ? "activeForm" : ""}`}>
         <form onSubmit={handleSubmit (submit)} className='modalForm_form'>
-            <h3 className='modalForm_title'>{updatingUser ? "Edit user" : "New user"}</h3>
-            <i onClick={handleClickClose} className="modalForm_exit bx bx-exit"></i>
+            <h3 className='modalForm_title'>
+              {updatingUser ? "Edit user" : "New user"}
+              </h3>
+            <i onClick={handleClickClose}  className="modalForm_exit bx bx-exit"></i>
             
               <div className='modalForm_div'>
               <label className='modalForm_label' htmlFor="">First Name: </label>

@@ -8,14 +8,6 @@ const BASE_URL = "https://users-crud.academlo.tech/"
 
 function App() {
 
-  const defaultValues = {
-    "first_name": "",
-    "last_name": "",
-    "email": "",
-    "password": "",
-    "birthday": ""
-  
-  }
   const [users, setUsers] = useState([])
   const [isShowModal, setIsShowModal] = useState(false)
   const [updatingUser, setUpdatingUser] = useState()
@@ -80,7 +72,7 @@ function App() {
        updatingUser = {updatingUser}
        updateUser={updateUser}
        setUpdatingUser={setUpdatingUser}
-       defaultValues={defaultValues}/>
+      />
       
       <UsersList
        users={users}
