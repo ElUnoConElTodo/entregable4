@@ -1,0 +1,81 @@
+.userCard{
+    block-size: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid;  
+    border-color: lightgrey;
+    height: 100%;
+    width: 90%;
+
+    
+ 
+}
+
+.userCard_name{
+    margin: 0;
+    padding: 5px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 0px;
+}
+.userCard_ul{
+    padding: 8px;
+    
+}
+.userCard_li span{
+    padding-left: 4px;
+    font-weight: bold;
+    display: block;
+    color: rgb(54, 82, 138);
+}
+.icon{
+    padding: 4px;
+    padding-right: 5px;
+    font-size: 23px;
+
+}
+
+.userCard_li{
+    padding-left: 3px;
+    padding-bottom: 4px;
+}
+.userCard_line{
+    color: white;
+}
+.userCardButton{
+    display: flex;
+    padding: 1px;
+    justify-content: right;
+    margin: 1px;
+    align-items: center;
+}
+.userCardButton_btn{
+    display: flex;
+    font-size: 17px;
+    padding: 5px;
+    margin-inline: 4px;
+    background-color: rgba(250, 66, 66, 0.831);
+    color: white;
+    border-color: red;
+    margin: 15x;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.userCardButton_btn:hover{
+    background-color: rgba(182, 30, 30, 0.861);
+
+}
+.userCardButton_btn2{
+    display: flex;
+    font-size: 17px;
+    padding: 4px;
+    margin-inline: 4px;
+    margin: 15x;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.userCardButton_btn2:hover{
+    background-color: rgba(145, 139, 139, 0.713);
+}
